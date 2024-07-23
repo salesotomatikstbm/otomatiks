@@ -21,12 +21,12 @@ const Nav = () => {
         
     },
     {
-        label: 'About',
+        label: 'About Us',
         link: '/about',
         
     },
     {
-      label: 'Courses',
+      label: 'Our Courses',
       link: '#',
       submenu: [
         { label: 'Course 1', link: '/course-1' },
@@ -39,22 +39,22 @@ const Nav = () => {
       ],
     },
     {
-        label: 'Media',
+        label: 'School Program',
         link: '#',
         submenu: [
-          { label: 'Photo Gallery', link: '/Photo'},
-          { label: 'Video', link: '/Video' },
+          { label: 'School Program 1', link: '/Program_1'},
+          { label: 'School Program 2', link: '/Program_2' },
          
         ],
         submenuOpen: false, 
     },
     {
-        label: 'Blog',
+        label: 'Blogs',
         link: '/blog',
         
     },
     {
-        label: 'Contact',
+        label: 'Contact Us',
         link: '/contact',
         
     },

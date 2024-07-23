@@ -15,7 +15,7 @@ const Footer = () => {
                                         <img src="assets/images/logo-white.png" alt="" className="img-fluid"/>
                                     </div>
                                     
-                                    <p className="mt-4">Otomatiks is a company specializing in cutting-edge robotics and automation solutions.</p>
+                                    <p className="mt-4">Otomatiks provides a hands-on, project-based robotics curriculum for schools and standalone classes. Students work with real robots and learn through practical experience.</p>
 
                                     <div className="footer-socials mt-5">
                                         <span className="me-2">Connect :</span>
@@ -67,9 +67,9 @@ const Footer = () => {
                                 <div className="footer-widget mb-5 mb-lg-0">
                                     <h5 className="widget-title">Address</h5>
                                     <ul className="list-unstyled footer-links">
-                                        <li><Link to="#"> +91 86102 10593</Link></li>
-                                        <li><Link to="#">qbee.academy@gmail.com</Link></li>
-                                        <li><Link to="#">QBee Academy 16/379 Mullai Nagar, 2nd Cross street West Tambaram, Tambaram, Chennai,Tamil Nadu 600 045</Link></li>
+                                        <li><Link to="#"> +91 90432 09448</Link></li>
+                                        <li><Link to="#">support@otomatiks.in</Link></li>
+                                        <li><Link to="#">Otomatiks Activity Centre, No. A2/36, 12th East Cross Road Opp B&B Golden Gate Apartment, Gandhi Nagar, Vellore-632006, Tamil Nadu 632006</Link></li>
                                     </ul>
                                 </div>
                             </div>

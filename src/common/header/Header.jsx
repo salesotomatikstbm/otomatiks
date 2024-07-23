@@ -38,11 +38,11 @@ const Header = () => {
                                 <div className="header-contact text-center text-lg-start d-none d-sm-block">
                                     <ul className="list-inline">
                                         <li className="list-inline-item">
-                                            <span className="text-color me-2"><i className="fa fa-phone-alt"></i></span><a href="tel:+91 86102 10593"> +91 86102 10593</a>
+                                            <span className="text-color me-2"><i className="fa fa-phone-alt"></i></span><a href="tel:+91 90432 09448"> +91 90432 09448</a>
                                         </li>
 
                                         <li className="list-inline-item">
-                                            <span className="text-color me-2"><i className="fa fa-envelope"></i></span><a href="malito:qbee.academy@gmail.com"> qbee.academy@gmail.com </a>
+                                            <span className="text-color me-2"><i className="fa fa-envelope"></i></span><a href="malito:qbee.academy@gmail.com"> support@otomatiks.in </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -52,11 +52,11 @@ const Header = () => {
                                 <div className="d-sm-flex justify-content-center justify-content-lg-end">
                                     <div className="header-socials text-center text-lg-end">
                                         <ul className="list-inline">
-                                            <li className="list-inline-item"><Link to="#"><i className="fab fa-facebook-f"></i></Link></li>
-                                            <li className="list-inline-item"><Link to="#"><i className="fab fa-twitter"></i></Link></li>
+                                            <li className="list-inline-item" target="_blank"><Link to="https://www.facebook.com/otomatiks"><i className="fab fa-facebook-f" ></i></Link></li>
+                                            <li className="list-inline-item"><Link to="https://x.com/i/flow/login?redirect_after_login=%2FOtomatikss"><i className="fab fa-twitter"></i></Link></li>
                                             <li className="list-inline-item"><Link to="#"><i className="fab fa-linkedin-in"></i></Link></li>
-                                            <li className="list-inline-item"><Link to="#"><i className="fab fa-pinterest"></i></Link></li>
-                                            <li className="list-inline-item"><Link to="#"><i className="fab fa-youtube"></i></Link></li>
+                                            <li className="list-inline-item"><Link to="https://www.instagram.com/explore/tags/otomatiks/"><i className="fab fa-pinterest"></i></Link></li>
+                                            <li className="list-inline-item"><Link to="https://www.youtube.com/channel/UCTRQX3ue5zD2qdwyjce42jw"><i className="fab fa-youtube"></i></Link></li>
                                         </ul>
                                     </div>
 
