@@ -8,5 +8,5 @@ import Features from './Features';
 import Team from './Team';
 import Review from './Review';
 import Cta from './Cta';
-
-export {Banner,CourseGrid01,CourseCat01,Counter,About,CourseGridPopular,Features,Team,Review,Cta}
+import Process from './Process';
+export {Banner,CourseGrid01,CourseCat01,Counter,About,CourseGridPopular,Features,Team,Review,Cta,Process}

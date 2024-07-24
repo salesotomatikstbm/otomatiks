@@ -11,7 +11,7 @@ class Banner extends Component {
                     <div className="col-md-12 col-xl-6 col-lg-6">
                         <div className="banner-content ">
                             <span className="subheading">Shape Your Child’s Future</span>
-                            <h1>Upgrade your learning Skills & Upgrade your life</h1>
+                            <h1>Elevate Your Robotics Knowledge & Elevate Your Adventures</h1>
                             <p className="mb-40"> Our robotics classes are designed to help you discover the potential of this exciting field with the guidance of our experienced instructors.</p>
 
                             <div className="btn-container">

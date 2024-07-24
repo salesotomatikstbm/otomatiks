@@ -10,33 +10,34 @@ class About extends Component {
                 {
                     id: 1,
                     step: '01',
-                    title: 'Sign Up with Your Details',
-                    text: 'Join our robotics program by signing up with your details.',
+                    title: 'Beginner',
+                    text: 'Learn basic electronics and robot navigation with the Scoobot kit.',
                     extraName: 'bg-1',
                 },
                 {
                     id: 2,
                     step: '02',
-                    title: 'Enroll in the Robotics Course',
-                    text: 'Secure your spot by enrolling in our engaging robotics course.',
+                    title: 'Advanced',
+                    text: 'Master programming concepts and develop custom codes.',
                     extraName: 'bg-2',
                 },
                 {
                     id: 3,
                     step: '03',
-                    title: 'Learn through Interactive Lessons',
-                    text: 'Dive into the world of robotics with hands-on, interactive lessons.',
+                    title: 'Expert',
+                    text: 'Build and code Android apps to control your robot.',
                     extraName: 'bg-3',
                 },
                 {
                     id: 4,
                     step: '04',
                     title: 'Earn Your Robotics Certificate',
-                    text: 'Complete the course and receive your official robotics certificate.',
+                    text: 'Complete the course to receive your robotics certificate.',
                     extraName: 'bg-1',
                 }
             ],
         }
+        
         
     }
 
@@ -48,8 +49,8 @@ class About extends Component {
                 <div className="row mb-40">
                     <div className="col-xl-8">
                         <div className="section-heading ">
-                            <h2 className="font-lg">Start your journey With us</h2>
-                            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam</p>
+                            <h2 className="font-lg">Robotics Courses</h2>
+                            <p>Robotics courses provide students with a strong foundation in robot design, programming, and real-world applications, preparing them for careers in automation and emerging technologies.</p>
                         </div>
                     </div>
                 </div>

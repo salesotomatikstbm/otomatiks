@@ -19,7 +19,7 @@ class Cta extends Component {
                                         <div className="cta-content ps-lg-4">
                                             <span className="subheading mb-10">Not sure where to start?</span>
                                             <h2 className="mb-20"> Want to know Special Offers & Updates of new courses?</h2>
-                                            <Link to="#" className="btn btn-main rounded"> Join NOw</Link>
+                                            <Link to="#" className="btn btn-main rounded"> Join Now</Link>
                                         </div>
                                     </div>
                                 </div>
