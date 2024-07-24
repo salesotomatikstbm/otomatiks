@@ -37,9 +37,9 @@ class Features extends Component {
         return (
             <section className="features-3">
                 <div className="container">
-                    <div className="row justify-content-center">
+                    <div className="row">
                         <div className="col-xl-8">
-                            <div className="section-heading mb-50 text-center">
+                            <div className="section-heading mb-50 ">
                                 <h2 className="font-lg">Transform Your Life</h2>
                                 <p>Discover Your Perfect Program In Our Courses.</p>
                             </div>

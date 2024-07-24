@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Cta extends Component {
     render() {
         return (
-            <section className="cta-5 mb--120 bg-gray">
+            <section className="cta-5 mb--100 bg-gray">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-xl-12">
