@@ -20,7 +20,7 @@ const HomeOne = () => {
                 <Process />
                 {/* <CourseGridPopular /> */}
                 <Features />
-                {/* <Team /> */}
+                <Team />
                 <Review />
                 <Cta />    
             <FooterOne/>  

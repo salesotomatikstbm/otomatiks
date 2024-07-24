@@ -41,7 +41,7 @@ class Process extends Component {
         return (
             <section className="work-process-section">
                 <div className="container">
-                    <div className="row mb-70 justify-content-between">
+                    <div className="row mb-40 justify-content-between">
                         <div className="col-xl-5">
                             <div className="section-heading text-center text-lg-start mb-4 mb-xl-0">
                              

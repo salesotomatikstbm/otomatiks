@@ -1,118 +1,139 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 class Team extends Component {
     constructor(props){
         super(props);
         this.state = {
-           team: [
+            team: [
                 {
                     id: 1,
-                    img: 'assets/images/team/team-1.jpg',
-                    title: 'Harish Ham',
-                    text: 'SEO Expert',
-                    students: '20',
-                    lessons: '2',
-                    fb: 'fab fa-facebook-f',
-                    twitter: 'fab fa-twitter',
-                    linkedin: 'fab fa-linkedin-in',
+                    videoUrl: 'https://www.youtube.com/embed/8j9k3Nw4jpo', // Corrected YouTube embed URL
+                    title: 'Otomatiks Event',
                 },
                 {
                     id: 2,
-                    img: 'assets/images/team/team-2.jpg',
-                    title: 'Harish Ham',
-                    text: 'Marketer',
-                    students: '20',
-                    lessons: '4',
-                    fb: 'fab fa-facebook-f',
-                    twitter: 'fab fa-twitter',
-                    linkedin: 'fab fa-linkedin-in',
+                    videoUrl: 'https://www.youtube.com/embed/8j9k3Nw4jpo', // Corrected YouTube embed URL
+                    title: 'Otomatiks Event',
                 },
                 {
                     id: 3,
-                    img: 'assets/images/team/team-3.jpg',
-                    title: 'Harish Ham',
-                    text: 'Developer',
-                    students: '20',
-                    lessons: '6',
-                    fb: 'fab fa-facebook-f',
-                    twitter: 'fab fa-twitter',
-                    linkedin: 'fab fa-linkedin-in',
+                    videoUrl: 'https://www.youtube.com/embed/2GOwZnxwNeE', // Corrected YouTube embed URL
+                    title: 'Otomatiks Event',
                 },
                 {
                     id: 4,
-                    img: 'assets/images/team/team-4.jpg',
-                    title: 'Harish Ham',
-                    text: 'SEO Expert',
-                    stuendets: '20',
-                    lessons: '10',
-                    fb: 'fab fa-facebook-f',
-                    twitter: 'fab fa-twitter',
-                    linkedin: 'fab fa-linkedin-in',
+                    videoUrl: 'https://www.youtube.com/embed/2GOwZnxwNeE', // Corrected YouTube embed URL
+                    title: 'Otomatiks Event',
                 },
-                
+                {
+                    id: 5,
+                    videoUrl: 'https://www.youtube.com/embed/2GOwZnxwNeE', // Corrected YouTube embed URL
+                    title: 'HOtomatiks Event',
+                },
+                {
+                    id: 6,
+                    videoUrl: 'https://www.youtube.com/embed/2GOwZnxwNeE', // Corrected YouTube embed URL
+                    title: 'Otomatiks Event',
+                },
+                {
+                    id: 7,
+                    videoUrl: 'https://www.youtube.com/embed/2GOwZnxwNeE', // Corrected YouTube embed URL
+                    title: 'Otomatiks Event',
+                },
+                {
+                    id: 8,
+                    videoUrl: 'https://www.youtube.com/embed/2GOwZnxwNeE', // Corrected YouTube embed URL
+                    title: 'Otomatiks Event',
+                },
+                {
+                    id: 9,
+                    videoUrl: 'https://www.youtube.com/embed/2GOwZnxwNeE', // Corrected YouTube embed URL
+                    title: 'Otomatiks Event',
+                },
+                {
+                    id: 10,
+                    videoUrl: 'https://www.youtube.com/embed/2GOwZnxwNeE', // Corrected YouTube embed URL
+                    title: 'Otomatiks Event',
+                }
             ]
         }
     }
 
     render() {
+        const sliderSettings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        };
+
         return (
             <section className="team section-padding">
                 <div className="container">
-                    <div className="row  mb-100">
+                    <div className="row mb-50">
                         <div className="col-lg-8 col-xl-8">
                             <div className="section-heading text-center text-lg-start">
                                 <h2 className="font-lg">Meet Our Dedicated Instructors</h2>
-                                <p>Discover Your Perfect Program In Our Courses.</p>
+                                <p>Robotica event provides oppurtunity for students to exchange ideas and demonstrate innovative robotic creations.</p>
                             </div>
                         </div>
 
                         <div className="col-xl-4 col-lg-4">
                             <div className="text-center text-lg-end">
-                                <Link to="#" className="btn btn-main-outline rounded">All Instructors <i className="fa fa-angle-right"></i></Link>
+                                <a href="#" className="btn btn-main-outline rounded">All Videos <i className="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
 
                     <div className="row">
-
-                    {
-                        this.state.team.map((data,i) =>(
-
-                            <div className="col-xl-3 col-lg-4 col-sm-6" key={data.id}>
-                                <div className="team-item team-item-4 mb-70 mb-lg-0">
-                                    <div className="team-img">
-                                        <img src={data.img} alt="" className="img-fluid"/>
-
-                                        <ul className="team-socials list-inline">
-                                            <li class="list-inline-item"><Link to="#"><i class={data.fb}></i></Link></li>
-                                            <li class="list-inline-item"><Link to="#"><i class={data.twitter}></i></Link></li>
-                                            <li class="list-inline-item"><Link to="#"><i class={data.linkedin}></i></Link></li>
-                                        </ul>
-                                    </div>
-                                    <div className="team-content">
-                                        <div className="team-info">
-                                            <h4>{data.title}</h4>
-                                            <p>{data.text}</p>
-                                        </div>
-
-                                        <div className="course-meta">
-                                            <span className="duration"><i className="far fa-user-alt"></i>{data.students} Students</span>
-                                            <span className="lessons"><i className="far fa-play-circle me-2"></i>{data.lessons} Course</span>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div className="col-12">
+                            <div className="text-center mb-4">
+                                <h2 className="font-lg">Check Out Our videos</h2> {/* Overall title for the slider section */}
                             </div>
-                        ))
-                    }
-
-                    
+                            <Slider {...sliderSettings}>
+                                {this.state.team.map((data) => (
+                                    <div className="team-item mb-5" key={data.id} style={{ padding: '0 15px' }}> {/* Increased padding for spacing */}
+                                        <div className="team-img">
+                                            <iframe
+                                                src={data.videoUrl}
+                                                title={data.title}
+                                                className="img-fluid"
+                                                style={{ width: '100%', height: '250px', border: 'none' }} // Reduced height and removed border
+                                                allowFullScreen
+                                            ></iframe>
+                                        </div>
+                                        <div className="team-content text-center mt-3">
+                                            <h4>{data.title}</h4>
+                                        </div>
+                                    </div>
+                                ))}
+                            </Slider>
+                        </div>
                     </div>
                 </div>
             </section>
-
-           
-                    
         );
     }
 }
