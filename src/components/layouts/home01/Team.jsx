@@ -31,7 +31,7 @@ class Team extends Component {
                 {
                     id: 5,
                     videoUrl: 'https://www.youtube.com/embed/2GOwZnxwNeE', // Corrected YouTube embed URL
-                    title: 'HOtomatiks Event',
+                    title: 'Otomatiks Event',
                 },
                 {
                     id: 6,
@@ -114,20 +114,21 @@ class Team extends Component {
                             </div>
                             <Slider {...sliderSettings}>
                                 {this.state.team.map((data) => (
-                                    <div className="team-item mb-5" key={data.id} style={{ padding: '0 15px' }}> {/* Increased padding for spacing */}
-                                        <div className="team-img">
-                                            <iframe
-                                                src={data.videoUrl}
-                                                title={data.title}
-                                                className="img-fluid"
-                                                style={{ width: '100%', height: '250px', border: 'none' }} // Reduced height and removed border
-                                                allowFullScreen
-                                            ></iframe>
-                                        </div>
-                                        <div className="team-content text-center mt-3">
-                                            <h4>{data.title}</h4>
-                                        </div>
-                                    </div>
+                                   <div className="team-item mb-5" key={data.id} style={{ padding: '0 25px' }}>
+                                   <div className="team-img">
+                                       <iframe
+                                           src={data.videoUrl}
+                                           title={data.title}
+                                           className="img-fluid"
+                                           style={{ width: '100%', height: '250px', border: 'none' }}
+                                           allowFullScreen
+                                       ></iframe>
+                                   </div>
+                                   <div className="team-content text-center mt-3">
+                                       <h4>{data.title}</h4>
+                                   </div>
+                               </div>
+                               
                                 ))}
                             </Slider>
                         </div>
