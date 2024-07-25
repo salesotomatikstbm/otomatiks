@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const OurJourney = () => {
   const [openItem, setOpenItem] = useState(null);
@@ -8,15 +9,15 @@ const OurJourney = () => {
   };
 
   const timelineData = [
-    { id: 1, year: '2024 A brief history of our milestones and achievements. ', content: 'Started our journey with the launch of our first product.' },
-    { id: 2, year: '2023 A brief history of our milestones and achievements.', content: 'Expanded our team and moved to a new office.' },
-    { id: 3, year: '2022 A brief history of our milestones and achievements.', content: 'Reached 10,000 customers worldwide.' },
-    { id: 4, year: '2021 A brief history of our milestones and achievements.', content: 'Launched our second product, receiving global recognition.' },
-    { id: 5, year: '2020 A brief history of our milestones and achievements.', content: 'Opened our first international office in Europe.' },
+    { id: 1, year: '2024', content: 'Started our journey with the launch of our first product.' },
+    { id: 2, year: '2023', content: 'Expanded our team and moved to a new office.' },
+    { id: 3, year: '2022', content: 'Reached 10,000 customers worldwide.' },
+    { id: 4, year: '2021', content: 'Launched our second product, receiving global recognition.' },
+    { id: 5, year: '2020', content: 'Opened our first international office in Europe.' },
   ];
 
   return (
-    <section className="our-journey section-padding">
+    <section className="our-journey py-5 bg-light">
       <div className="container">
         <div className="text-center mb-4">
           <h2>Our Journey</h2>
@@ -29,17 +30,16 @@ const OurJourney = () => {
                 <div className="timeline">
                   {timelineData.map(item => (
                     <div className="timeline-item position-relative mb-4" key={item.id}>
-                      <div className="position-absolute  d-flex align-items-center justify-content-center">
-                       
+                      <div className="position-absolute d-flex align-items-center justify-content-center" style={{ width: '20px', height: '20px', backgroundColor: '#007bff', borderRadius: '50%' }}>
+                        {/* Timeline Circle */}
                       </div>
-                      <div className="timeline-content ms-auto me-3 p-4  ">
+                      <div className="timeline-content ms-auto me-3 p-4 bg-white shadow rounded">
                         <div className="d-flex justify-content-between align-items-center">
-                          <h4 className="mb-1" style={{ textDecoration: 'none' }}>{item.year}</h4>
+                          <h4 className="mb-1">{item.year}</h4>
                           <button
-                            className="btn btn-link"
+                            className="btn btn-link text-decoration-none"
                             onClick={() => toggleItem(item.id)}
                             aria-expanded={openItem === item.id}
-                            style={{ textDecoration: 'none' }}
                           >
                             {openItem === item.id ? 'Hide' : 'Show'}
                           </button>
