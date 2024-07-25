@@ -1,7 +1,7 @@
 import React from 'react';
 import { AssuranceSection, PageBanner, SchoolProgramSection, WhatWeOfferSection}  from '../layouts/schoolprogram/index';
 import Layout from '../../common/Layout';
-import { HubsSection, Review } from '../layouts/about';
+import { HubsSection, Review, YourComponent } from '../layouts/about';
 
 
 
@@ -18,6 +18,7 @@ const schoolprogram = () => {
                    <SchoolProgramSection />
                 <WhatWeOfferSection />
                 <AssuranceSection />
+                <YourComponent />
                 <HubsSection />
                 <Review />
             </Layout>

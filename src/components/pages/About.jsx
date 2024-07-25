@@ -19,11 +19,13 @@ const AboutMain = () => {
                     <Counter />
                     <OurJourney />
                     <AboutComp />
-                    <YourComponent />
+                   
                     
                     <Team />
-                    <Review />
+                    <YourComponent />
                     <HubsSection />
+                    <Review />
+                    
             </Layout>
         </div>
     );
