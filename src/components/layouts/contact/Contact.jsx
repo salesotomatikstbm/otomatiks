@@ -10,17 +10,17 @@ class ContactInfo extends Component {
                 {
                     id: 1,
                     icon: 'fa fa-envelope',
-                    title: 'support@email.com',
+                    title: 'support@otomatiks.in',
                 },  
                 {
                     id: 2,
                     icon: 'fa fa-phone-alt',
-                    title: '+45 234 345467',
+                    title: '+91 90432 09448',
                 },  
                 {
                     id: 3,
                     icon: 'fa fa-map-marker',
-                    title: 'Moon Street Light Avenue, 14/05 Jupiter ',
+                    title: 'Otomatiks Activity Centre, No. A2/36, 12th East Cross Road Opp B&B Golden Gate Apartment, Gandhi Nagar, Vellore-632006, Tamil Nadu 632006 ',
                 },
                 
             ]

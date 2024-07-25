@@ -9,24 +9,24 @@ class About extends Component {
                 {
                     id: 1,
                     icon: 'fa fa-video',
-                    title: 'Online Classes',
+                    title: 'Our Mission',
                     extraClassName: 'icon-bg-3',
                     text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem veniam nulla inventore dolores fuga'
                 },
                 {
                     id: 2,
                     icon: 'far fa-file-certificate',
-                    title: 'Get certificate',
+                    title: 'Our Vision',
                     extraClassName: 'icon-bg-2',
                     text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem veniam nulla inventore dolores fuga'
                 },
-                {
-                    id: 3,
-                    icon: 'fad fa-users',
-                    title: 'Life Time Support',
-                    extraClassName: 'icon-bg-1',
-                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem veniam nulla inventore dolores fuga'
-                },
+                // {
+                //     id: 3,
+                //     icon: 'fad fa-users',
+                //     title: 'Life Time Support',
+                //     extraClassName: 'icon-bg-1',
+                //     text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem veniam nulla inventore dolores fuga'
+                // },
                 
             ]
         }
@@ -45,8 +45,8 @@ class About extends Component {
                         <div className="col-xl-6 col-lg-6">
                             <div className="about-content mt-5 mt-lg-0">
                                 <div className="heading mb-50">
-                                    <span className="subheading">10 years Glory of success</span>
-                                    <h2 className="font-lg">Some reasons why Start Your Online Learning with Us</h2>
+                                    <span className="subheading">13 years Glory of success</span>
+                                    <h2 className="font-lg">We are the Best Robotics Training Institute</h2>
                                 </div>
 
                                 <div className="about-features">

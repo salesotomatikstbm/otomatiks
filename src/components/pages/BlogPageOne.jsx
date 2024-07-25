@@ -47,7 +47,7 @@ const BlogPageOne = () => {
                                 <div class="col-lg-4 col-xl-4">
 
                                     <div className="blog-sidebar mt-mt-lg-0">
-                                        <SearchOne />
+                                        {/* <SearchOne /> */}
                                         <LatestPostOne extraClass="mt--40" />
                                         <CategoryOne extraClass="mt--40" />
                                         <TagOne extraClass="mt--40" />

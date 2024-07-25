@@ -9,28 +9,28 @@ class AboutComp extends Component {
                 {
                     id: 1,
                     step: '01',
-                    title: 'Signup with all info',
+                    title: 'Lorem ipsum dolor',
                     text: 'Lorem ipsum dolor seat ameat dui too consecteture elite adipaising.',
                     extraName: 'bg-1',
                 },
                 {
                     id: 2,
                     step: '02',
-                    title: 'Take your Admission',
+                    title: 'Lorem ipsum dolor',
                     text: 'Lorem ipsum dolor seat ameat dui too consecteture elite adipaising.',
                     extraName: 'bg-2',
                 },
                 {
                     id: 3,
                     step: '03',
-                    title: 'Learn from online',
+                    title: 'Lorem ipsum dolor',
                     text: 'Lorem ipsum dolor seat ameat dui too consecteture elite adipaising. ',
                     extraName: 'bg-3',
                 },
                 {
                     id: 4,
                     step: '04',
-                    title: 'Get certificate',
+                    title: 'Lorem ipsum dolor',
                     text: 'Lorem ipsum dolor seat ameat dui too consecteture elite adipaising. ',
                     extraName: 'bg-1',
                 }
@@ -45,8 +45,8 @@ class AboutComp extends Component {
                 <div className="row mb-70 justify-content-between">
                     <div className="col-xl-5 col-lg-6">
                         <div className="section-heading mb-4 mb-xl-0">
-                            <span className="subheading">How to Start</span>
-                            <h2 className="font-lg">4 steps start your journey with us</h2>
+                            <span className="subheading">Trust</span>
+                            <h2 className="font-lg">Why People Trust Us</h2>
                         </div>
                     </div>
                     <div className="col-xl-6 col-lg-6">

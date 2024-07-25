@@ -12,18 +12,18 @@ class CourseGrid extends Component {
                 <div className="course-top-wrap">
                     <div className="container">
                         <div className="row align-items-center">
-                            <div className="col-lg-8">
+                            {/* <div className="col-lg-8">
                                 <p>Showing 1-6 of 8 results</p>
-                            </div>
+                            </div> */}
             
-                            <div className="col-lg-4">
+                            {/* <div className="col-lg-4">
                                 <div className="topbar-search">
                                     <form method="get" action="#">
                                         <input type="text"  placeholder="Search our courses" className="form-control"/>
                                         <label><i className="fa fa-search"></i></label>
                                     </form>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ const PostGridOne = ( { data } ) => {
         <div class="blog-item mb-30">
             <div class="post-thumb">
                 <Link to="/">
-                    <img src={`${process.env.PUBLIC_URL}/assets/images/blog/post-01/${data.image}`} alt="Blog Thumb" className="img-fluid" />
+                    <img src={`${process.env.PUBLIC_URL}/assets/images/blog/${data.image}`} alt=" otomatiks Blog Thumb" className="img-fluid" />
                 </Link>
             </div>
             <div class="blog-content">

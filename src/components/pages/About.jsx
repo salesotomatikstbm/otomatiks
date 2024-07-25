@@ -1,6 +1,7 @@
 import React from 'react';
-import { PageBanner,Counter, AboutComp,Features,Team,Review}  from '../layouts/about/index';
+import { PageBanner,Counter, AboutComp,Features,Team,Review, OurJourney, HubsSection}  from '../layouts/about/index';
 import Layout from '../../common/Layout';
+import YourComponent from '../layouts/about/YourComponent';
 
 
 const AboutMain = () => {
@@ -14,10 +15,15 @@ const AboutMain = () => {
                         currentUrl="About"
                         />
                     <Features />
-                    <Team />
+                   
                     <Counter />
+                    <OurJourney />
                     <AboutComp />
+                    <YourComponent />
+                    
+                    <Team />
                     <Review />
+                    <HubsSection />
             </Layout>
         </div>
     );

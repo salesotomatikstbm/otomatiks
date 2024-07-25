@@ -65,7 +65,7 @@ class Team extends Component {
                         <div className="col-xl-6 pe-5">
                             <div className="section-heading">
                                 <span className="subheading">Start Today</span>
-                                <h2 className="font-lg mb-20">Our Top Instructors</h2>
+                                <h2 className="font-lg mb-20">Our Team</h2>
                                 <p className="mb-30">Do you want to be an instructor? Do you want to share your knowledge with everyone? If you have any skill then you can easily 
                                     share your knowledge online or offline  through iLive platform & make money.</p>
                                 

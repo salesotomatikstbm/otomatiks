@@ -8,10 +8,10 @@ const CourseOne = () =>  {
         <div className="page">       
             <Layout>    
                 <PageBanner
-                    title="Course style 1"
+                    title="Course"
                     rootUrl="/"
                     parentUrl="Home"
-                    currentUrl="Course Style - 1"
+                    currentUrl="Course"
                     />
                 <CourseGrid />
             </Layout>  

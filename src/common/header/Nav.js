@@ -27,25 +27,25 @@ const Nav = () => {
     },
     {
       label: 'Our Courses',
-      link: '#',
-      submenu: [
-        { label: 'Course 1', link: '/course-1' },
-        { label: 'Course 2 ', link: '/course-2' },
-        { label: 'Course 3', link: '/course-3' },
-        { label: 'Course 4', link: '/course-4' },
-        { label: 'Course 5', link: '/course-5' },
-        { label: 'Course 6', link: '/course-6' },
-        { label: 'Course 7', link: '/course-7' },
-      ],
+      link: '/courses',
+      // submenu: [
+      //   { label: 'Course 1', link: '/course-1' },
+      //   { label: 'Course 2 ', link: '/course-2' },
+      //   { label: 'Course 3', link: '/course-3' },
+      //   { label: 'Course 4', link: '/course-4' },
+      //   { label: 'Course 5', link: '/course-5' },
+      //   { label: 'Course 6', link: '/course-6' },
+      //   { label: 'Course 7', link: '/course-7' },
+      // ],
     },
     {
         label: 'School Program',
-        link: '#',
-        submenu: [
-          { label: 'School Program 1', link: '/Program_1'},
-          { label: 'School Program 2', link: '/Program_2' },
+        link: '/program',
+        // submenu: [
+        //   { label: 'School Program 1', link: '/Program_1'},
+        //   { label: 'School Program 2', link: '/Program_2' },
          
-        ],
+        // ],
         submenuOpen: false, 
     },
     {
