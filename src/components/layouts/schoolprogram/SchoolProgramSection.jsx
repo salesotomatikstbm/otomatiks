@@ -6,7 +6,7 @@ const SchoolProgramSection = () => {
     <section className="container my-5">
       <div className="row">
         <div className="col-md-12 text-center mb-4">
-          <h2 className="font-lg">Introduction to Our School Program</h2>
+          <h2 className="font-lg">Our School Program</h2>
           <p>
             Welcome to our school program section. Here, you'll find detailed information about our educational offerings, including curriculum highlights, extracurricular activities, and more. We are dedicated to providing a comprehensive learning experience tailored to the needs of every student.
           </p>

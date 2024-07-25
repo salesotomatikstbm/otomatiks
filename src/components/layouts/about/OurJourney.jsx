@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 
 const OurJourney = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [openItem, setOpenItem] = useState(null);
 
-  const toggleCollapse = () => {
-    setIsOpen(!isOpen);
+  const toggleItem = (id) => {
+    setOpenItem(openItem === id ? null : id);
   };
+
+  const timelineData = [
+    { id: 1, year: '2024 A brief history of our milestones and achievements. ', content: 'Started our journey with the launch of our first product.' },
+    { id: 2, year: '2023 A brief history of our milestones and achievements.', content: 'Expanded our team and moved to a new office.' },
+    { id: 3, year: '2022 A brief history of our milestones and achievements.', content: 'Reached 10,000 customers worldwide.' },
+    { id: 4, year: '2021 A brief history of our milestones and achievements.', content: 'Launched our second product, receiving global recognition.' },
+    { id: 5, year: '2020 A brief history of our milestones and achievements.', content: 'Opened our first international office in Europe.' },
+  ];
 
   return (
     <section className="our-journey section-padding">
@@ -13,68 +21,33 @@ const OurJourney = () => {
         <div className="text-center mb-4">
           <h2>Our Journey</h2>
           <p>A brief history of our milestones and achievements.</p>
-          <button
-            className="btn btn-primary"
-            type="button"
-            onClick={toggleCollapse}
-            aria-expanded={isOpen}
-            aria-controls="timelineContent"
-          >
-            {isOpen ? 'Hide Timeline' : 'Show Timeline'}
-          </button>
         </div>
-        <div className={`collapse ${isOpen ? 'show' : ''}`} id="timelineContent">
-          <div className="position-relative">
-            <div className="row">
-              <div className="col-12">
-                <div className="position-relative">
-                  <div className="timeline">
-                    <div className="timeline-item position-relative mb-4">
-                      <div className="timeline-icon position-absolute bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
-                        <i className="fas fa-flag"></i>
+        <div className="position-relative">
+          <div className="row">
+            <div className="col-12">
+              <div className="position-relative">
+                <div className="timeline">
+                  {timelineData.map(item => (
+                    <div className="timeline-item position-relative mb-4" key={item.id}>
+                      <div className="position-absolute  d-flex align-items-center justify-content-center">
+                       
                       </div>
-                      <div className="timeline-content ms-auto me-3 p-4 bg-light rounded shadow-sm">
-                        <h4 className="mb-1">2024</h4>
-                        <p>Started our journey with the launch of our first product.</p>
-                      </div>
-                    </div>
-                    <div className="timeline-item position-relative mb-4">
-                      <div className="timeline-icon position-absolute bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
-                        <i className="fas fa-flag"></i>
-                      </div>
-                      <div className="timeline-content ms-auto me-3 p-4 bg-light rounded shadow-sm">
-                        <h4 className="mb-1">2023</h4>
-                        <p>Expanded our team and moved to a new office.</p>
-                      </div>
-                    </div>
-                    <div className="timeline-item position-relative mb-4">
-                      <div className="timeline-icon position-absolute bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
-                        <i className="fas fa-flag"></i>
-                      </div>
-                      <div className="timeline-content ms-auto me-3 p-4 bg-light rounded shadow-sm">
-                        <h4 className="mb-1">2022</h4>
-                        <p>Reached 10,000 customers worldwide.</p>
+                      <div className="timeline-content ms-auto me-3 p-4  ">
+                        <div className="d-flex justify-content-between align-items-center">
+                          <h4 className="mb-1" style={{ textDecoration: 'none' }}>{item.year}</h4>
+                          <button
+                            className="btn btn-link"
+                            onClick={() => toggleItem(item.id)}
+                            aria-expanded={openItem === item.id}
+                            style={{ textDecoration: 'none' }}
+                          >
+                            {openItem === item.id ? 'Hide' : 'Show'}
+                          </button>
+                        </div>
+                        {openItem === item.id && <p className="mt-2">{item.content}</p>}
                       </div>
                     </div>
-                    <div className="timeline-item position-relative mb-4">
-                      <div className="timeline-icon position-absolute bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
-                        <i className="fas fa-flag"></i>
-                      </div>
-                      <div className="timeline-content ms-auto me-3 p-4 bg-light rounded shadow-sm">
-                        <h4 className="mb-1">2021</h4>
-                        <p>Launched our second product, receiving global recognition.</p>
-                      </div>
-                    </div>
-                    <div className="timeline-item position-relative mb-4">
-                      <div className="timeline-icon position-absolute bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
-                        <i className="fas fa-flag"></i>
-                      </div>
-                      <div className="timeline-content ms-auto me-3 p-4 bg-light rounded shadow-sm">
-                        <h4 className="mb-1">2020</h4>
-                        <p>Opened our first international office in Europe.</p>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>

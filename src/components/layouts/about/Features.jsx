@@ -46,7 +46,7 @@ class About extends Component {
                             <div className="about-content mt-5 mt-lg-0">
                                 <div className="heading mb-50">
                                     <span className="subheading">13 years Glory of success</span>
-                                    <h2 className="font-lg">We are the Best Robotics Training Institute</h2>
+                                    <h2 className="font-lg">Our Story</h2>
                                 </div>
 
                                 <div className="about-features">

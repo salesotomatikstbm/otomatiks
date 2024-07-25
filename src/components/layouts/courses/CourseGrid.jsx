@@ -9,8 +9,10 @@ class CourseGrid extends Component {
 
         return (
             <section className="section-padding page" >
+           
                 <div className="course-top-wrap">
                     <div className="container">
+                    <h1 className='text-center'>Our Coures</h1>
                         <div className="row align-items-center">
                             {/* <div className="col-lg-8">
                                 <p>Showing 1-6 of 8 results</p>

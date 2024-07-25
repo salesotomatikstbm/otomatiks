@@ -18,12 +18,14 @@ const HubsSection = () => {
     <section className="container my-5">
       <h2 className="text-center mb-4">Our Hubs</h2>
       <div className="text-center">
-        {districts.map((district, index) => (
-          <React.Fragment key={index}>
-            <span className="mx-2">{district}</span>
-            {index < districts.length - 1 && <span>|</span>}
-          </React.Fragment>
-        ))}
+        <div className="d-flex flex-wrap justify-content-center">
+          {districts.map((district, index) => (
+            <React.Fragment key={index}>
+              <span className="mx-2">{district}</span>
+              {index < districts.length - 1 && <span className="mx-2">|</span>}
+            </React.Fragment>
+          ))}
+        </div>
       </div>
     </section>
   );

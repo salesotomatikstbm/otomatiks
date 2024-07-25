@@ -1,7 +1,8 @@
 import React from 'react';
-import {PageBanner,CourseGrid}  from '../layouts/courses/index';
+import {PageBanner,CourseGrid, RoboticsKit}  from '../layouts/courses/index';
 
 import Layout from '../../common/Layout';
+import { HubsSection, Review } from '../layouts/about';
 
 const CourseOne = () =>  {
     return (
@@ -13,7 +14,11 @@ const CourseOne = () =>  {
                     parentUrl="Home"
                     currentUrl="Course"
                     />
+                    <RoboticsKit />
                 <CourseGrid />
+
+                <HubsSection />
+                <Review />
             </Layout>  
         </div>
     );
